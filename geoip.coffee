@@ -4,7 +4,6 @@ geoip = new ReactiveDict(null)
 
 rest = (ip, callback) ->
   url = "https://freegeoip.net/json/#{ip}"
-  console.log "Ip ", ip, url
   HTTP.get url, (err,resp) ->
     if (not err and resp.statusCode is 200) then callback JSON.parse(resp.content)
 

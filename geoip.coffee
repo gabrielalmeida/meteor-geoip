@@ -1,5 +1,3 @@
-# GeoLite2 = new Mongo.Collection 'maxmind-geolite2'
-
 geoip = new ReactiveDict(null)
 
 rest = (ip, callback) ->

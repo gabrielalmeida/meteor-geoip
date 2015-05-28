@@ -16,3 +16,11 @@ Package.onUse(function(api) {
   api.addFiles('geoip.coffee');
   api.export(['geoip'], 'client');
 });
+
+
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('peter:geoip');
+  api.addFiles('tests.js');
+  api.export(['geoip'], 'client');
+});

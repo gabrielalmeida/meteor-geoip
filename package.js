@@ -1,6 +1,6 @@
 Package.describe({
   name: 'peter:geoip',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'simple ip based location data.',
   // URL to the Git repository containing the source code for this package.
@@ -15,6 +15,7 @@ Package.onUse(function(api) {
   api.use(['coffeescript', 'reactive-dict', 'http', 'gadicohen:headers@0.0.27']);
   api.addFiles('geoip.coffee');
   api.export(['geoip'], 'client');
+  api.export(['GeoIp'], 'client');
 });
 
 

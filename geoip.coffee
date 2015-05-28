@@ -26,6 +26,6 @@ if Meteor.isClient
     rest geoip.get('ip'), (location) ->
       geoip.set 'location', location
       geoip.set 'locationTimestamp', Date.now()
-      
+
 # Maxmind's database is updated on the first Tuesday of each month
 # 'http://geolite.maxmind.com/download/geoip/database/GeoLite2-City-CSV.zip'
